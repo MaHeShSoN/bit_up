@@ -3,7 +3,7 @@ name: iOS Build
 on:
   push:
     branches:
-      - main   # Runs when you push to main branch
+      - master
 
 jobs:
   build-ios:
