@@ -12,8 +12,7 @@ part of 'profile_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ProfileEvent {
@@ -21,42 +20,47 @@ mixin _$ProfileEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(String userId) getUserProfile,
     required TResult Function(UserProfileEntity profile) updateUserProfile,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? getUserProfile,
     TResult? Function(UserProfileEntity profile)? updateUserProfile,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? getUserProfile,
     TResult Function(UserProfileEntity profile)? updateUserProfile,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetUserProfile value) getUserProfile,
     required TResult Function(_UpdateUserProfile value) updateUserProfile,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetUserProfile value)? getUserProfile,
     TResult? Function(_UpdateUserProfile value)? updateUserProfile,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetUserProfile value)? getUserProfile,
     TResult Function(_UpdateUserProfile value)? updateUserProfile,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ProfileEventCopyWith<$Res> {
   factory $ProfileEventCopyWith(
-    ProfileEvent value,
-    $Res Function(ProfileEvent) then,
-  ) = _$ProfileEventCopyWithImpl<$Res, ProfileEvent>;
+          ProfileEvent value, $Res Function(ProfileEvent) then) =
+      _$ProfileEventCopyWithImpl<$Res, ProfileEvent>;
 }
 
 /// @nodoc
@@ -75,10 +79,9 @@ class _$ProfileEventCopyWithImpl<$Res, $Val extends ProfileEvent>
 
 /// @nodoc
 abstract class _$$GetUserProfileImplCopyWith<$Res> {
-  factory _$$GetUserProfileImplCopyWith(
-    _$GetUserProfileImpl value,
-    $Res Function(_$GetUserProfileImpl) then,
-  ) = __$$GetUserProfileImplCopyWithImpl<$Res>;
+  factory _$$GetUserProfileImplCopyWith(_$GetUserProfileImpl value,
+          $Res Function(_$GetUserProfileImpl) then) =
+      __$$GetUserProfileImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userId});
 }
@@ -88,23 +91,22 @@ class __$$GetUserProfileImplCopyWithImpl<$Res>
     extends _$ProfileEventCopyWithImpl<$Res, _$GetUserProfileImpl>
     implements _$$GetUserProfileImplCopyWith<$Res> {
   __$$GetUserProfileImplCopyWithImpl(
-    _$GetUserProfileImpl _value,
-    $Res Function(_$GetUserProfileImpl) _then,
-  ) : super(_value, _then);
+      _$GetUserProfileImpl _value, $Res Function(_$GetUserProfileImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$GetUserProfileImpl(
-        null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$GetUserProfileImpl(
+      null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -139,9 +141,7 @@ class _$GetUserProfileImpl implements _GetUserProfile {
   @pragma('vm:prefer-inline')
   _$$GetUserProfileImplCopyWith<_$GetUserProfileImpl> get copyWith =>
       __$$GetUserProfileImplCopyWithImpl<_$GetUserProfileImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -220,10 +220,9 @@ abstract class _GetUserProfile implements ProfileEvent {
 
 /// @nodoc
 abstract class _$$UpdateUserProfileImplCopyWith<$Res> {
-  factory _$$UpdateUserProfileImplCopyWith(
-    _$UpdateUserProfileImpl value,
-    $Res Function(_$UpdateUserProfileImpl) then,
-  ) = __$$UpdateUserProfileImplCopyWithImpl<$Res>;
+  factory _$$UpdateUserProfileImplCopyWith(_$UpdateUserProfileImpl value,
+          $Res Function(_$UpdateUserProfileImpl) then) =
+      __$$UpdateUserProfileImplCopyWithImpl<$Res>;
   @useResult
   $Res call({UserProfileEntity profile});
 }
@@ -232,24 +231,23 @@ abstract class _$$UpdateUserProfileImplCopyWith<$Res> {
 class __$$UpdateUserProfileImplCopyWithImpl<$Res>
     extends _$ProfileEventCopyWithImpl<$Res, _$UpdateUserProfileImpl>
     implements _$$UpdateUserProfileImplCopyWith<$Res> {
-  __$$UpdateUserProfileImplCopyWithImpl(
-    _$UpdateUserProfileImpl _value,
-    $Res Function(_$UpdateUserProfileImpl) _then,
-  ) : super(_value, _then);
+  __$$UpdateUserProfileImplCopyWithImpl(_$UpdateUserProfileImpl _value,
+      $Res Function(_$UpdateUserProfileImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? profile = null}) {
-    return _then(
-      _$UpdateUserProfileImpl(
-        null == profile
-            ? _value.profile
-            : profile // ignore: cast_nullable_to_non_nullable
-                  as UserProfileEntity,
-      ),
-    );
+  $Res call({
+    Object? profile = null,
+  }) {
+    return _then(_$UpdateUserProfileImpl(
+      null == profile
+          ? _value.profile
+          : profile // ignore: cast_nullable_to_non_nullable
+              as UserProfileEntity,
+    ));
   }
 }
 
@@ -284,9 +282,7 @@ class _$UpdateUserProfileImpl implements _UpdateUserProfile {
   @pragma('vm:prefer-inline')
   _$$UpdateUserProfileImplCopyWith<_$UpdateUserProfileImpl> get copyWith =>
       __$$UpdateUserProfileImplCopyWithImpl<_$UpdateUserProfileImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs

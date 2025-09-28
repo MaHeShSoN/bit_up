@@ -12,8 +12,7 @@ part of 'profile_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ProfileState {
@@ -24,7 +23,8 @@ mixin _$ProfileState {
     required TResult Function(UserProfileEntity profile) profileLoaded,
     required TResult Function() profileUpdated,
     required TResult Function(Failure failure) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -32,7 +32,8 @@ mixin _$ProfileState {
     TResult? Function(UserProfileEntity profile)? profileLoaded,
     TResult? Function()? profileUpdated,
     TResult? Function(Failure failure)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
@@ -41,7 +42,8 @@ mixin _$ProfileState {
     TResult Function()? profileUpdated,
     TResult Function(Failure failure)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
@@ -49,7 +51,8 @@ mixin _$ProfileState {
     required TResult Function(_ProfileLoaded value) profileLoaded,
     required TResult Function(_ProfileUpdated value) profileUpdated,
     required TResult Function(_Error value) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
@@ -57,7 +60,8 @@ mixin _$ProfileState {
     TResult? Function(_ProfileLoaded value)? profileLoaded,
     TResult? Function(_ProfileUpdated value)? profileUpdated,
     TResult? Function(_Error value)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
@@ -66,15 +70,15 @@ mixin _$ProfileState {
     TResult Function(_ProfileUpdated value)? profileUpdated,
     TResult Function(_Error value)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ProfileStateCopyWith<$Res> {
   factory $ProfileStateCopyWith(
-    ProfileState value,
-    $Res Function(ProfileState) then,
-  ) = _$ProfileStateCopyWithImpl<$Res, ProfileState>;
+          ProfileState value, $Res Function(ProfileState) then) =
+      _$ProfileStateCopyWithImpl<$Res, ProfileState>;
 }
 
 /// @nodoc
@@ -94,9 +98,8 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
 /// @nodoc
 abstract class _$$InitialImplCopyWith<$Res> {
   factory _$$InitialImplCopyWith(
-    _$InitialImpl value,
-    $Res Function(_$InitialImpl) then,
-  ) = __$$InitialImplCopyWithImpl<$Res>;
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -104,9 +107,8 @@ class __$$InitialImplCopyWithImpl<$Res>
     extends _$ProfileStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
-    _$InitialImpl _value,
-    $Res Function(_$InitialImpl) _then,
-  ) : super(_value, _then);
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -219,9 +221,8 @@ abstract class _Initial implements ProfileState {
 /// @nodoc
 abstract class _$$LoadingImplCopyWith<$Res> {
   factory _$$LoadingImplCopyWith(
-    _$LoadingImpl value,
-    $Res Function(_$LoadingImpl) then,
-  ) = __$$LoadingImplCopyWithImpl<$Res>;
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -229,9 +230,8 @@ class __$$LoadingImplCopyWithImpl<$Res>
     extends _$ProfileStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
-    _$LoadingImpl _value,
-    $Res Function(_$LoadingImpl) _then,
-  ) : super(_value, _then);
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -344,9 +344,8 @@ abstract class _Loading implements ProfileState {
 /// @nodoc
 abstract class _$$ProfileLoadedImplCopyWith<$Res> {
   factory _$$ProfileLoadedImplCopyWith(
-    _$ProfileLoadedImpl value,
-    $Res Function(_$ProfileLoadedImpl) then,
-  ) = __$$ProfileLoadedImplCopyWithImpl<$Res>;
+          _$ProfileLoadedImpl value, $Res Function(_$ProfileLoadedImpl) then) =
+      __$$ProfileLoadedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({UserProfileEntity profile});
 }
@@ -356,23 +355,22 @@ class __$$ProfileLoadedImplCopyWithImpl<$Res>
     extends _$ProfileStateCopyWithImpl<$Res, _$ProfileLoadedImpl>
     implements _$$ProfileLoadedImplCopyWith<$Res> {
   __$$ProfileLoadedImplCopyWithImpl(
-    _$ProfileLoadedImpl _value,
-    $Res Function(_$ProfileLoadedImpl) _then,
-  ) : super(_value, _then);
+      _$ProfileLoadedImpl _value, $Res Function(_$ProfileLoadedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? profile = null}) {
-    return _then(
-      _$ProfileLoadedImpl(
-        null == profile
-            ? _value.profile
-            : profile // ignore: cast_nullable_to_non_nullable
-                  as UserProfileEntity,
-      ),
-    );
+  $Res call({
+    Object? profile = null,
+  }) {
+    return _then(_$ProfileLoadedImpl(
+      null == profile
+          ? _value.profile
+          : profile // ignore: cast_nullable_to_non_nullable
+              as UserProfileEntity,
+    ));
   }
 }
 
@@ -504,10 +502,9 @@ abstract class _ProfileLoaded implements ProfileState {
 
 /// @nodoc
 abstract class _$$ProfileUpdatedImplCopyWith<$Res> {
-  factory _$$ProfileUpdatedImplCopyWith(
-    _$ProfileUpdatedImpl value,
-    $Res Function(_$ProfileUpdatedImpl) then,
-  ) = __$$ProfileUpdatedImplCopyWithImpl<$Res>;
+  factory _$$ProfileUpdatedImplCopyWith(_$ProfileUpdatedImpl value,
+          $Res Function(_$ProfileUpdatedImpl) then) =
+      __$$ProfileUpdatedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -515,9 +512,8 @@ class __$$ProfileUpdatedImplCopyWithImpl<$Res>
     extends _$ProfileStateCopyWithImpl<$Res, _$ProfileUpdatedImpl>
     implements _$$ProfileUpdatedImplCopyWith<$Res> {
   __$$ProfileUpdatedImplCopyWithImpl(
-    _$ProfileUpdatedImpl _value,
-    $Res Function(_$ProfileUpdatedImpl) _then,
-  ) : super(_value, _then);
+      _$ProfileUpdatedImpl _value, $Res Function(_$ProfileUpdatedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -630,9 +626,8 @@ abstract class _ProfileUpdated implements ProfileState {
 /// @nodoc
 abstract class _$$ErrorImplCopyWith<$Res> {
   factory _$$ErrorImplCopyWith(
-    _$ErrorImpl value,
-    $Res Function(_$ErrorImpl) then,
-  ) = __$$ErrorImplCopyWithImpl<$Res>;
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Failure failure});
 }
@@ -642,23 +637,22 @@ class __$$ErrorImplCopyWithImpl<$Res>
     extends _$ProfileStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
-    _$ErrorImpl _value,
-    $Res Function(_$ErrorImpl) _then,
-  ) : super(_value, _then);
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failure = null}) {
-    return _then(
-      _$ErrorImpl(
-        null == failure
-            ? _value.failure
-            : failure // ignore: cast_nullable_to_non_nullable
-                  as Failure,
-      ),
-    );
+  $Res call({
+    Object? failure = null,
+  }) {
+    return _then(_$ErrorImpl(
+      null == failure
+          ? _value.failure
+          : failure // ignore: cast_nullable_to_non_nullable
+              as Failure,
+    ));
   }
 }
 

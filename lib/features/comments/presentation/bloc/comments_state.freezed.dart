@@ -12,8 +12,7 @@ part of 'comments_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CommentsState {
@@ -24,7 +23,8 @@ mixin _$CommentsState {
     required TResult Function(List<CommentEntity> comments) commentsLoaded,
     required TResult Function() commentPosted,
     required TResult Function(Failure failure) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -32,7 +32,8 @@ mixin _$CommentsState {
     TResult? Function(List<CommentEntity> comments)? commentsLoaded,
     TResult? Function()? commentPosted,
     TResult? Function(Failure failure)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
@@ -41,7 +42,8 @@ mixin _$CommentsState {
     TResult Function()? commentPosted,
     TResult Function(Failure failure)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
@@ -49,7 +51,8 @@ mixin _$CommentsState {
     required TResult Function(_CommentsLoaded value) commentsLoaded,
     required TResult Function(_CommentPosted value) commentPosted,
     required TResult Function(_Error value) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
@@ -57,7 +60,8 @@ mixin _$CommentsState {
     TResult? Function(_CommentsLoaded value)? commentsLoaded,
     TResult? Function(_CommentPosted value)? commentPosted,
     TResult? Function(_Error value)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
@@ -66,15 +70,15 @@ mixin _$CommentsState {
     TResult Function(_CommentPosted value)? commentPosted,
     TResult Function(_Error value)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CommentsStateCopyWith<$Res> {
   factory $CommentsStateCopyWith(
-    CommentsState value,
-    $Res Function(CommentsState) then,
-  ) = _$CommentsStateCopyWithImpl<$Res, CommentsState>;
+          CommentsState value, $Res Function(CommentsState) then) =
+      _$CommentsStateCopyWithImpl<$Res, CommentsState>;
 }
 
 /// @nodoc
@@ -94,9 +98,8 @@ class _$CommentsStateCopyWithImpl<$Res, $Val extends CommentsState>
 /// @nodoc
 abstract class _$$InitialImplCopyWith<$Res> {
   factory _$$InitialImplCopyWith(
-    _$InitialImpl value,
-    $Res Function(_$InitialImpl) then,
-  ) = __$$InitialImplCopyWithImpl<$Res>;
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -104,9 +107,8 @@ class __$$InitialImplCopyWithImpl<$Res>
     extends _$CommentsStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
-    _$InitialImpl _value,
-    $Res Function(_$InitialImpl) _then,
-  ) : super(_value, _then);
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsState
   /// with the given fields replaced by the non-null parameter values.
@@ -219,9 +221,8 @@ abstract class _Initial implements CommentsState {
 /// @nodoc
 abstract class _$$LoadingImplCopyWith<$Res> {
   factory _$$LoadingImplCopyWith(
-    _$LoadingImpl value,
-    $Res Function(_$LoadingImpl) then,
-  ) = __$$LoadingImplCopyWithImpl<$Res>;
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -229,9 +230,8 @@ class __$$LoadingImplCopyWithImpl<$Res>
     extends _$CommentsStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
-    _$LoadingImpl _value,
-    $Res Function(_$LoadingImpl) _then,
-  ) : super(_value, _then);
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsState
   /// with the given fields replaced by the non-null parameter values.
@@ -343,10 +343,9 @@ abstract class _Loading implements CommentsState {
 
 /// @nodoc
 abstract class _$$CommentsLoadedImplCopyWith<$Res> {
-  factory _$$CommentsLoadedImplCopyWith(
-    _$CommentsLoadedImpl value,
-    $Res Function(_$CommentsLoadedImpl) then,
-  ) = __$$CommentsLoadedImplCopyWithImpl<$Res>;
+  factory _$$CommentsLoadedImplCopyWith(_$CommentsLoadedImpl value,
+          $Res Function(_$CommentsLoadedImpl) then) =
+      __$$CommentsLoadedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<CommentEntity> comments});
 }
@@ -356,23 +355,22 @@ class __$$CommentsLoadedImplCopyWithImpl<$Res>
     extends _$CommentsStateCopyWithImpl<$Res, _$CommentsLoadedImpl>
     implements _$$CommentsLoadedImplCopyWith<$Res> {
   __$$CommentsLoadedImplCopyWithImpl(
-    _$CommentsLoadedImpl _value,
-    $Res Function(_$CommentsLoadedImpl) _then,
-  ) : super(_value, _then);
+      _$CommentsLoadedImpl _value, $Res Function(_$CommentsLoadedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? comments = null}) {
-    return _then(
-      _$CommentsLoadedImpl(
-        null == comments
-            ? _value._comments
-            : comments // ignore: cast_nullable_to_non_nullable
-                  as List<CommentEntity>,
-      ),
-    );
+  $Res call({
+    Object? comments = null,
+  }) {
+    return _then(_$CommentsLoadedImpl(
+      null == comments
+          ? _value._comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<CommentEntity>,
+    ));
   }
 }
 
@@ -380,7 +378,7 @@ class __$$CommentsLoadedImplCopyWithImpl<$Res>
 
 class _$CommentsLoadedImpl implements _CommentsLoaded {
   const _$CommentsLoadedImpl(final List<CommentEntity> comments)
-    : _comments = comments;
+      : _comments = comments;
 
   final List<CommentEntity> _comments;
   @override
@@ -414,9 +412,7 @@ class _$CommentsLoadedImpl implements _CommentsLoaded {
   @pragma('vm:prefer-inline')
   _$$CommentsLoadedImplCopyWith<_$CommentsLoadedImpl> get copyWith =>
       __$$CommentsLoadedImplCopyWithImpl<_$CommentsLoadedImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -515,9 +511,8 @@ abstract class _CommentsLoaded implements CommentsState {
 /// @nodoc
 abstract class _$$CommentPostedImplCopyWith<$Res> {
   factory _$$CommentPostedImplCopyWith(
-    _$CommentPostedImpl value,
-    $Res Function(_$CommentPostedImpl) then,
-  ) = __$$CommentPostedImplCopyWithImpl<$Res>;
+          _$CommentPostedImpl value, $Res Function(_$CommentPostedImpl) then) =
+      __$$CommentPostedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -525,9 +520,8 @@ class __$$CommentPostedImplCopyWithImpl<$Res>
     extends _$CommentsStateCopyWithImpl<$Res, _$CommentPostedImpl>
     implements _$$CommentPostedImplCopyWith<$Res> {
   __$$CommentPostedImplCopyWithImpl(
-    _$CommentPostedImpl _value,
-    $Res Function(_$CommentPostedImpl) _then,
-  ) : super(_value, _then);
+      _$CommentPostedImpl _value, $Res Function(_$CommentPostedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsState
   /// with the given fields replaced by the non-null parameter values.
@@ -640,9 +634,8 @@ abstract class _CommentPosted implements CommentsState {
 /// @nodoc
 abstract class _$$ErrorImplCopyWith<$Res> {
   factory _$$ErrorImplCopyWith(
-    _$ErrorImpl value,
-    $Res Function(_$ErrorImpl) then,
-  ) = __$$ErrorImplCopyWithImpl<$Res>;
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Failure failure});
 }
@@ -652,23 +645,22 @@ class __$$ErrorImplCopyWithImpl<$Res>
     extends _$CommentsStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
-    _$ErrorImpl _value,
-    $Res Function(_$ErrorImpl) _then,
-  ) : super(_value, _then);
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failure = null}) {
-    return _then(
-      _$ErrorImpl(
-        null == failure
-            ? _value.failure
-            : failure // ignore: cast_nullable_to_non_nullable
-                  as Failure,
-      ),
-    );
+  $Res call({
+    Object? failure = null,
+  }) {
+    return _then(_$ErrorImpl(
+      null == failure
+          ? _value.failure
+          : failure // ignore: cast_nullable_to_non_nullable
+              as Failure,
+    ));
   }
 }
 

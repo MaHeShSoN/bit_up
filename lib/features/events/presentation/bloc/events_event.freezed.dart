@@ -12,8 +12,7 @@ part of 'events_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$EventsEvent {
@@ -24,7 +23,8 @@ mixin _$EventsEvent {
     required TResult Function(String eventId, String userId) rsvpToEvent,
     required TResult Function(String eventId, String userId) cancelRsvp,
     required TResult Function(String eventId, String userId) checkRsvpStatus,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? getEvents,
@@ -32,7 +32,8 @@ mixin _$EventsEvent {
     TResult? Function(String eventId, String userId)? rsvpToEvent,
     TResult? Function(String eventId, String userId)? cancelRsvp,
     TResult? Function(String eventId, String userId)? checkRsvpStatus,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? getEvents,
@@ -41,7 +42,8 @@ mixin _$EventsEvent {
     TResult Function(String eventId, String userId)? cancelRsvp,
     TResult Function(String eventId, String userId)? checkRsvpStatus,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetEvents value) getEvents,
@@ -49,7 +51,8 @@ mixin _$EventsEvent {
     required TResult Function(_RsvpToEvent value) rsvpToEvent,
     required TResult Function(_CancelRsvp value) cancelRsvp,
     required TResult Function(_CheckRsvpStatus value) checkRsvpStatus,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetEvents value)? getEvents,
@@ -57,7 +60,8 @@ mixin _$EventsEvent {
     TResult? Function(_RsvpToEvent value)? rsvpToEvent,
     TResult? Function(_CancelRsvp value)? cancelRsvp,
     TResult? Function(_CheckRsvpStatus value)? checkRsvpStatus,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetEvents value)? getEvents,
@@ -66,15 +70,15 @@ mixin _$EventsEvent {
     TResult Function(_CancelRsvp value)? cancelRsvp,
     TResult Function(_CheckRsvpStatus value)? checkRsvpStatus,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $EventsEventCopyWith<$Res> {
   factory $EventsEventCopyWith(
-    EventsEvent value,
-    $Res Function(EventsEvent) then,
-  ) = _$EventsEventCopyWithImpl<$Res, EventsEvent>;
+          EventsEvent value, $Res Function(EventsEvent) then) =
+      _$EventsEventCopyWithImpl<$Res, EventsEvent>;
 }
 
 /// @nodoc
@@ -94,9 +98,8 @@ class _$EventsEventCopyWithImpl<$Res, $Val extends EventsEvent>
 /// @nodoc
 abstract class _$$GetEventsImplCopyWith<$Res> {
   factory _$$GetEventsImplCopyWith(
-    _$GetEventsImpl value,
-    $Res Function(_$GetEventsImpl) then,
-  ) = __$$GetEventsImplCopyWithImpl<$Res>;
+          _$GetEventsImpl value, $Res Function(_$GetEventsImpl) then) =
+      __$$GetEventsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -104,9 +107,8 @@ class __$$GetEventsImplCopyWithImpl<$Res>
     extends _$EventsEventCopyWithImpl<$Res, _$GetEventsImpl>
     implements _$$GetEventsImplCopyWith<$Res> {
   __$$GetEventsImplCopyWithImpl(
-    _$GetEventsImpl _value,
-    $Res Function(_$GetEventsImpl) _then,
-  ) : super(_value, _then);
+      _$GetEventsImpl _value, $Res Function(_$GetEventsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -219,9 +221,8 @@ abstract class _GetEvents implements EventsEvent {
 /// @nodoc
 abstract class _$$GetEventByIdImplCopyWith<$Res> {
   factory _$$GetEventByIdImplCopyWith(
-    _$GetEventByIdImpl value,
-    $Res Function(_$GetEventByIdImpl) then,
-  ) = __$$GetEventByIdImplCopyWithImpl<$Res>;
+          _$GetEventByIdImpl value, $Res Function(_$GetEventByIdImpl) then) =
+      __$$GetEventByIdImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String eventId});
 }
@@ -231,23 +232,22 @@ class __$$GetEventByIdImplCopyWithImpl<$Res>
     extends _$EventsEventCopyWithImpl<$Res, _$GetEventByIdImpl>
     implements _$$GetEventByIdImplCopyWith<$Res> {
   __$$GetEventByIdImplCopyWithImpl(
-    _$GetEventByIdImpl _value,
-    $Res Function(_$GetEventByIdImpl) _then,
-  ) : super(_value, _then);
+      _$GetEventByIdImpl _value, $Res Function(_$GetEventByIdImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null}) {
-    return _then(
-      _$GetEventByIdImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+  }) {
+    return _then(_$GetEventByIdImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -379,9 +379,8 @@ abstract class _GetEventById implements EventsEvent {
 /// @nodoc
 abstract class _$$RsvpToEventImplCopyWith<$Res> {
   factory _$$RsvpToEventImplCopyWith(
-    _$RsvpToEventImpl value,
-    $Res Function(_$RsvpToEventImpl) then,
-  ) = __$$RsvpToEventImplCopyWithImpl<$Res>;
+          _$RsvpToEventImpl value, $Res Function(_$RsvpToEventImpl) then) =
+      __$$RsvpToEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String eventId, String userId});
 }
@@ -391,27 +390,27 @@ class __$$RsvpToEventImplCopyWithImpl<$Res>
     extends _$EventsEventCopyWithImpl<$Res, _$RsvpToEventImpl>
     implements _$$RsvpToEventImplCopyWith<$Res> {
   __$$RsvpToEventImplCopyWithImpl(
-    _$RsvpToEventImpl _value,
-    $Res Function(_$RsvpToEventImpl) _then,
-  ) : super(_value, _then);
+      _$RsvpToEventImpl _value, $Res Function(_$RsvpToEventImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null, Object? userId = null}) {
-    return _then(
-      _$RsvpToEventImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+    Object? userId = null,
+  }) {
+    return _then(_$RsvpToEventImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -548,9 +547,8 @@ abstract class _RsvpToEvent implements EventsEvent {
 /// @nodoc
 abstract class _$$CancelRsvpImplCopyWith<$Res> {
   factory _$$CancelRsvpImplCopyWith(
-    _$CancelRsvpImpl value,
-    $Res Function(_$CancelRsvpImpl) then,
-  ) = __$$CancelRsvpImplCopyWithImpl<$Res>;
+          _$CancelRsvpImpl value, $Res Function(_$CancelRsvpImpl) then) =
+      __$$CancelRsvpImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String eventId, String userId});
 }
@@ -560,27 +558,27 @@ class __$$CancelRsvpImplCopyWithImpl<$Res>
     extends _$EventsEventCopyWithImpl<$Res, _$CancelRsvpImpl>
     implements _$$CancelRsvpImplCopyWith<$Res> {
   __$$CancelRsvpImplCopyWithImpl(
-    _$CancelRsvpImpl _value,
-    $Res Function(_$CancelRsvpImpl) _then,
-  ) : super(_value, _then);
+      _$CancelRsvpImpl _value, $Res Function(_$CancelRsvpImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null, Object? userId = null}) {
-    return _then(
-      _$CancelRsvpImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+    Object? userId = null,
+  }) {
+    return _then(_$CancelRsvpImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -716,10 +714,9 @@ abstract class _CancelRsvp implements EventsEvent {
 
 /// @nodoc
 abstract class _$$CheckRsvpStatusImplCopyWith<$Res> {
-  factory _$$CheckRsvpStatusImplCopyWith(
-    _$CheckRsvpStatusImpl value,
-    $Res Function(_$CheckRsvpStatusImpl) then,
-  ) = __$$CheckRsvpStatusImplCopyWithImpl<$Res>;
+  factory _$$CheckRsvpStatusImplCopyWith(_$CheckRsvpStatusImpl value,
+          $Res Function(_$CheckRsvpStatusImpl) then) =
+      __$$CheckRsvpStatusImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String eventId, String userId});
 }
@@ -729,27 +726,27 @@ class __$$CheckRsvpStatusImplCopyWithImpl<$Res>
     extends _$EventsEventCopyWithImpl<$Res, _$CheckRsvpStatusImpl>
     implements _$$CheckRsvpStatusImplCopyWith<$Res> {
   __$$CheckRsvpStatusImplCopyWithImpl(
-    _$CheckRsvpStatusImpl _value,
-    $Res Function(_$CheckRsvpStatusImpl) _then,
-  ) : super(_value, _then);
+      _$CheckRsvpStatusImpl _value, $Res Function(_$CheckRsvpStatusImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null, Object? userId = null}) {
-    return _then(
-      _$CheckRsvpStatusImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+    Object? userId = null,
+  }) {
+    return _then(_$CheckRsvpStatusImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -787,9 +784,7 @@ class _$CheckRsvpStatusImpl implements _CheckRsvpStatus {
   @pragma('vm:prefer-inline')
   _$$CheckRsvpStatusImplCopyWith<_$CheckRsvpStatusImpl> get copyWith =>
       __$$CheckRsvpStatusImplCopyWithImpl<_$CheckRsvpStatusImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs

@@ -12,8 +12,7 @@ part of 'comments_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CommentsEvent {
@@ -22,35 +21,41 @@ mixin _$CommentsEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(String eventId) getComments,
     required TResult Function(String eventId, CommentEntity comment)
-    postComment,
-  }) => throw _privateConstructorUsedError;
+        postComment,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String eventId)? getComments,
     TResult? Function(String eventId, CommentEntity comment)? postComment,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String eventId)? getComments,
     TResult Function(String eventId, CommentEntity comment)? postComment,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetComments value) getComments,
     required TResult Function(_PostComment value) postComment,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetComments value)? getComments,
     TResult? Function(_PostComment value)? postComment,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetComments value)? getComments,
     TResult Function(_PostComment value)? postComment,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of CommentsEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -62,9 +67,8 @@ mixin _$CommentsEvent {
 /// @nodoc
 abstract class $CommentsEventCopyWith<$Res> {
   factory $CommentsEventCopyWith(
-    CommentsEvent value,
-    $Res Function(CommentsEvent) then,
-  ) = _$CommentsEventCopyWithImpl<$Res, CommentsEvent>;
+          CommentsEvent value, $Res Function(CommentsEvent) then) =
+      _$CommentsEventCopyWithImpl<$Res, CommentsEvent>;
   @useResult
   $Res call({String eventId});
 }
@@ -83,16 +87,15 @@ class _$CommentsEventCopyWithImpl<$Res, $Val extends CommentsEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null}) {
-    return _then(
-      _value.copyWith(
-            eventId: null == eventId
-                ? _value.eventId
-                : eventId // ignore: cast_nullable_to_non_nullable
-                      as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? eventId = null,
+  }) {
+    return _then(_value.copyWith(
+      eventId: null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -100,9 +103,8 @@ class _$CommentsEventCopyWithImpl<$Res, $Val extends CommentsEvent>
 abstract class _$$GetCommentsImplCopyWith<$Res>
     implements $CommentsEventCopyWith<$Res> {
   factory _$$GetCommentsImplCopyWith(
-    _$GetCommentsImpl value,
-    $Res Function(_$GetCommentsImpl) then,
-  ) = __$$GetCommentsImplCopyWithImpl<$Res>;
+          _$GetCommentsImpl value, $Res Function(_$GetCommentsImpl) then) =
+      __$$GetCommentsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String eventId});
@@ -113,23 +115,22 @@ class __$$GetCommentsImplCopyWithImpl<$Res>
     extends _$CommentsEventCopyWithImpl<$Res, _$GetCommentsImpl>
     implements _$$GetCommentsImplCopyWith<$Res> {
   __$$GetCommentsImplCopyWithImpl(
-    _$GetCommentsImpl _value,
-    $Res Function(_$GetCommentsImpl) _then,
-  ) : super(_value, _then);
+      _$GetCommentsImpl _value, $Res Function(_$GetCommentsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null}) {
-    return _then(
-      _$GetCommentsImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+  }) {
+    return _then(_$GetCommentsImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -170,7 +171,7 @@ class _$GetCommentsImpl implements _GetComments {
   TResult when<TResult extends Object?>({
     required TResult Function(String eventId) getComments,
     required TResult Function(String eventId, CommentEntity comment)
-    postComment,
+        postComment,
   }) {
     return getComments(eventId);
   }
@@ -247,9 +248,8 @@ abstract class _GetComments implements CommentsEvent {
 abstract class _$$PostCommentImplCopyWith<$Res>
     implements $CommentsEventCopyWith<$Res> {
   factory _$$PostCommentImplCopyWith(
-    _$PostCommentImpl value,
-    $Res Function(_$PostCommentImpl) then,
-  ) = __$$PostCommentImplCopyWithImpl<$Res>;
+          _$PostCommentImpl value, $Res Function(_$PostCommentImpl) then) =
+      __$$PostCommentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String eventId, CommentEntity comment});
@@ -260,27 +260,27 @@ class __$$PostCommentImplCopyWithImpl<$Res>
     extends _$CommentsEventCopyWithImpl<$Res, _$PostCommentImpl>
     implements _$$PostCommentImplCopyWith<$Res> {
   __$$PostCommentImplCopyWithImpl(
-    _$PostCommentImpl _value,
-    $Res Function(_$PostCommentImpl) _then,
-  ) : super(_value, _then);
+      _$PostCommentImpl _value, $Res Function(_$PostCommentImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CommentsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? eventId = null, Object? comment = null}) {
-    return _then(
-      _$PostCommentImpl(
-        null == eventId
-            ? _value.eventId
-            : eventId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        null == comment
-            ? _value.comment
-            : comment // ignore: cast_nullable_to_non_nullable
-                  as CommentEntity,
-      ),
-    );
+  $Res call({
+    Object? eventId = null,
+    Object? comment = null,
+  }) {
+    return _then(_$PostCommentImpl(
+      null == eventId
+          ? _value.eventId
+          : eventId // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == comment
+          ? _value.comment
+          : comment // ignore: cast_nullable_to_non_nullable
+              as CommentEntity,
+    ));
   }
 }
 
@@ -324,7 +324,7 @@ class _$PostCommentImpl implements _PostComment {
   TResult when<TResult extends Object?>({
     required TResult Function(String eventId) getComments,
     required TResult Function(String eventId, CommentEntity comment)
-    postComment,
+        postComment,
   }) {
     return postComment(eventId, comment);
   }
@@ -385,9 +385,7 @@ class _$PostCommentImpl implements _PostComment {
 
 abstract class _PostComment implements CommentsEvent {
   const factory _PostComment(
-    final String eventId,
-    final CommentEntity comment,
-  ) = _$PostCommentImpl;
+      final String eventId, final CommentEntity comment) = _$PostCommentImpl;
 
   @override
   String get eventId;

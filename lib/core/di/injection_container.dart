@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
-import 'package:firebase_database/firebase_database.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -48,7 +47,6 @@ Future<void> initDependencies() async {
   // Firebase
   getIt.registerLazySingleton<auth.FirebaseAuth>(() => auth.FirebaseAuth.instance);
   getIt.registerLazySingleton<FirebaseFirestore>(() => FirebaseFirestore.instance);
-  getIt.registerLazySingleton<FirebaseDatabase>(() => FirebaseDatabase.instance);
   getIt.registerLazySingleton<GoogleSignIn>(() => GoogleSignIn());
   
   // Features - Auth
@@ -111,7 +109,7 @@ Future<void> initDependencies() async {
   // Features - Comments
   // Data sources
   getIt.registerLazySingleton<CommentsRemoteDataSource>(
-    () => CommentsRemoteDataSourceImpl(database: getIt()),
+    () => CommentsRemoteDataSourceImpl(firestore: getIt()),
   );
   
   // Repository

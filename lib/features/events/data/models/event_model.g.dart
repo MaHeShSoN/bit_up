@@ -7,15 +7,15 @@ part of 'event_model.dart';
 // **************************************************************************
 
 EventModel _$EventModelFromJson(Map<String, dynamic> json) => EventModel(
-  eventId: json['eventId'] as String,
-  title: json['title'] as String,
-  description: json['description'] as String,
-  date: json['date'] as String,
-  location: json['location'] as String,
-  imageUrl: json['imageUrl'] as String,
-  createdBy: json['createdBy'] as String,
-  rsvps: (json['rsvps'] as List<dynamic>).map((e) => e as String).toList(),
-);
+      eventId: json['eventId'] as String,
+      title: json['title'] as String,
+      description: json['description'] as String,
+      date: json['date'] as String,
+      location: json['location'] as String,
+      imageUrl: json['imageUrl'] as String,
+      createdBy: json['createdBy'] as String,
+      rsvps: (json['rsvps'] as List<dynamic>).map((e) => e as String).toList(),
+    );
 
 Map<String, dynamic> _$EventModelToJson(EventModel instance) =>
     <String, dynamic>{

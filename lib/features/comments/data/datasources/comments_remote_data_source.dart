@@ -1,4 +1,4 @@
-import 'package:firebase_database/firebase_database.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/comment_model.dart';
 
 abstract class CommentsRemoteDataSource {
@@ -7,24 +7,20 @@ abstract class CommentsRemoteDataSource {
 }
 
 class CommentsRemoteDataSourceImpl implements CommentsRemoteDataSource {
-  final FirebaseDatabase database;
+  final FirebaseFirestore firestore;
 
-  CommentsRemoteDataSourceImpl({required this.database});
+  CommentsRemoteDataSourceImpl({required this.firestore});
 
   @override
   Stream<List<CommentModel>> getComments(String eventId) {
-    return database
-        .ref()
-        .child('comments')
-        .child(eventId)
-        .orderByChild('timestamp')
-        .onValue
-        .map((event) {
-      if (event.snapshot.value == null) return <CommentModel>[];
-      
-      final Map<dynamic, dynamic> data = event.snapshot.value as Map<dynamic, dynamic>;
-      return data.entries
-          .map((entry) => CommentModel.fromJson(Map<String, dynamic>.from(entry.value)))
+    return firestore
+        .collection('comments')
+        .where('eventId', isEqualTo: eventId)
+        .orderBy('timestamp')
+        .snapshots()
+        .map((snapshot) {
+      return snapshot.docs
+          .map((doc) => CommentModel.fromJson(doc.data()))
           .toList();
     });
   }
@@ -32,11 +28,9 @@ class CommentsRemoteDataSourceImpl implements CommentsRemoteDataSource {
   @override
   Future<void> postComment(String eventId, CommentModel comment) async {
     try {
-      await database
-          .ref()
-          .child('comments')
-          .child(eventId)
-          .child(comment.commentId)
+      await firestore
+          .collection('comments')
+          .doc(comment.commentId)
           .set(comment.toJson());
     } catch (e) {
       throw Exception('Failed to post comment: $e');

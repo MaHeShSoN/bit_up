@@ -12,8 +12,7 @@ part of 'events_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$EventsState {
@@ -27,7 +26,8 @@ mixin _$EventsState {
     required TResult Function() rsvpCancelled,
     required TResult Function(bool isRsvped) rsvpStatus,
     required TResult Function(Failure failure) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -38,7 +38,8 @@ mixin _$EventsState {
     TResult? Function()? rsvpCancelled,
     TResult? Function(bool isRsvped)? rsvpStatus,
     TResult? Function(Failure failure)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
@@ -50,7 +51,8 @@ mixin _$EventsState {
     TResult Function(bool isRsvped)? rsvpStatus,
     TResult Function(Failure failure)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
@@ -61,7 +63,8 @@ mixin _$EventsState {
     required TResult Function(_RsvpCancelled value) rsvpCancelled,
     required TResult Function(_RsvpStatus value) rsvpStatus,
     required TResult Function(_Error value) error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
@@ -72,7 +75,8 @@ mixin _$EventsState {
     TResult? Function(_RsvpCancelled value)? rsvpCancelled,
     TResult? Function(_RsvpStatus value)? rsvpStatus,
     TResult? Function(_Error value)? error,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
@@ -84,15 +88,15 @@ mixin _$EventsState {
     TResult Function(_RsvpStatus value)? rsvpStatus,
     TResult Function(_Error value)? error,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $EventsStateCopyWith<$Res> {
   factory $EventsStateCopyWith(
-    EventsState value,
-    $Res Function(EventsState) then,
-  ) = _$EventsStateCopyWithImpl<$Res, EventsState>;
+          EventsState value, $Res Function(EventsState) then) =
+      _$EventsStateCopyWithImpl<$Res, EventsState>;
 }
 
 /// @nodoc
@@ -112,9 +116,8 @@ class _$EventsStateCopyWithImpl<$Res, $Val extends EventsState>
 /// @nodoc
 abstract class _$$InitialImplCopyWith<$Res> {
   factory _$$InitialImplCopyWith(
-    _$InitialImpl value,
-    $Res Function(_$InitialImpl) then,
-  ) = __$$InitialImplCopyWithImpl<$Res>;
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -122,9 +125,8 @@ class __$$InitialImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
-    _$InitialImpl _value,
-    $Res Function(_$InitialImpl) _then,
-  ) : super(_value, _then);
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
@@ -255,9 +257,8 @@ abstract class _Initial implements EventsState {
 /// @nodoc
 abstract class _$$LoadingImplCopyWith<$Res> {
   factory _$$LoadingImplCopyWith(
-    _$LoadingImpl value,
-    $Res Function(_$LoadingImpl) then,
-  ) = __$$LoadingImplCopyWithImpl<$Res>;
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -265,9 +266,8 @@ class __$$LoadingImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
-    _$LoadingImpl _value,
-    $Res Function(_$LoadingImpl) _then,
-  ) : super(_value, _then);
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
@@ -398,9 +398,8 @@ abstract class _Loading implements EventsState {
 /// @nodoc
 abstract class _$$EventsLoadedImplCopyWith<$Res> {
   factory _$$EventsLoadedImplCopyWith(
-    _$EventsLoadedImpl value,
-    $Res Function(_$EventsLoadedImpl) then,
-  ) = __$$EventsLoadedImplCopyWithImpl<$Res>;
+          _$EventsLoadedImpl value, $Res Function(_$EventsLoadedImpl) then) =
+      __$$EventsLoadedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<EventEntity> events});
 }
@@ -410,23 +409,22 @@ class __$$EventsLoadedImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$EventsLoadedImpl>
     implements _$$EventsLoadedImplCopyWith<$Res> {
   __$$EventsLoadedImplCopyWithImpl(
-    _$EventsLoadedImpl _value,
-    $Res Function(_$EventsLoadedImpl) _then,
-  ) : super(_value, _then);
+      _$EventsLoadedImpl _value, $Res Function(_$EventsLoadedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? events = null}) {
-    return _then(
-      _$EventsLoadedImpl(
-        null == events
-            ? _value._events
-            : events // ignore: cast_nullable_to_non_nullable
-                  as List<EventEntity>,
-      ),
-    );
+  $Res call({
+    Object? events = null,
+  }) {
+    return _then(_$EventsLoadedImpl(
+      null == events
+          ? _value._events
+          : events // ignore: cast_nullable_to_non_nullable
+              as List<EventEntity>,
+    ));
   }
 }
 
@@ -583,9 +581,8 @@ abstract class _EventsLoaded implements EventsState {
 /// @nodoc
 abstract class _$$EventLoadedImplCopyWith<$Res> {
   factory _$$EventLoadedImplCopyWith(
-    _$EventLoadedImpl value,
-    $Res Function(_$EventLoadedImpl) then,
-  ) = __$$EventLoadedImplCopyWithImpl<$Res>;
+          _$EventLoadedImpl value, $Res Function(_$EventLoadedImpl) then) =
+      __$$EventLoadedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({EventEntity event});
 }
@@ -595,23 +592,22 @@ class __$$EventLoadedImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$EventLoadedImpl>
     implements _$$EventLoadedImplCopyWith<$Res> {
   __$$EventLoadedImplCopyWithImpl(
-    _$EventLoadedImpl _value,
-    $Res Function(_$EventLoadedImpl) _then,
-  ) : super(_value, _then);
+      _$EventLoadedImpl _value, $Res Function(_$EventLoadedImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? event = null}) {
-    return _then(
-      _$EventLoadedImpl(
-        null == event
-            ? _value.event
-            : event // ignore: cast_nullable_to_non_nullable
-                  as EventEntity,
-      ),
-    );
+  $Res call({
+    Object? event = null,
+  }) {
+    return _then(_$EventLoadedImpl(
+      null == event
+          ? _value.event
+          : event // ignore: cast_nullable_to_non_nullable
+              as EventEntity,
+    ));
   }
 }
 
@@ -761,9 +757,8 @@ abstract class _EventLoaded implements EventsState {
 /// @nodoc
 abstract class _$$RsvpSuccessImplCopyWith<$Res> {
   factory _$$RsvpSuccessImplCopyWith(
-    _$RsvpSuccessImpl value,
-    $Res Function(_$RsvpSuccessImpl) then,
-  ) = __$$RsvpSuccessImplCopyWithImpl<$Res>;
+          _$RsvpSuccessImpl value, $Res Function(_$RsvpSuccessImpl) then) =
+      __$$RsvpSuccessImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -771,9 +766,8 @@ class __$$RsvpSuccessImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$RsvpSuccessImpl>
     implements _$$RsvpSuccessImplCopyWith<$Res> {
   __$$RsvpSuccessImplCopyWithImpl(
-    _$RsvpSuccessImpl _value,
-    $Res Function(_$RsvpSuccessImpl) _then,
-  ) : super(_value, _then);
+      _$RsvpSuccessImpl _value, $Res Function(_$RsvpSuccessImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
@@ -904,9 +898,8 @@ abstract class _RsvpSuccess implements EventsState {
 /// @nodoc
 abstract class _$$RsvpCancelledImplCopyWith<$Res> {
   factory _$$RsvpCancelledImplCopyWith(
-    _$RsvpCancelledImpl value,
-    $Res Function(_$RsvpCancelledImpl) then,
-  ) = __$$RsvpCancelledImplCopyWithImpl<$Res>;
+          _$RsvpCancelledImpl value, $Res Function(_$RsvpCancelledImpl) then) =
+      __$$RsvpCancelledImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -914,9 +907,8 @@ class __$$RsvpCancelledImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$RsvpCancelledImpl>
     implements _$$RsvpCancelledImplCopyWith<$Res> {
   __$$RsvpCancelledImplCopyWithImpl(
-    _$RsvpCancelledImpl _value,
-    $Res Function(_$RsvpCancelledImpl) _then,
-  ) : super(_value, _then);
+      _$RsvpCancelledImpl _value, $Res Function(_$RsvpCancelledImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
@@ -1047,9 +1039,8 @@ abstract class _RsvpCancelled implements EventsState {
 /// @nodoc
 abstract class _$$RsvpStatusImplCopyWith<$Res> {
   factory _$$RsvpStatusImplCopyWith(
-    _$RsvpStatusImpl value,
-    $Res Function(_$RsvpStatusImpl) then,
-  ) = __$$RsvpStatusImplCopyWithImpl<$Res>;
+          _$RsvpStatusImpl value, $Res Function(_$RsvpStatusImpl) then) =
+      __$$RsvpStatusImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isRsvped});
 }
@@ -1059,23 +1050,22 @@ class __$$RsvpStatusImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$RsvpStatusImpl>
     implements _$$RsvpStatusImplCopyWith<$Res> {
   __$$RsvpStatusImplCopyWithImpl(
-    _$RsvpStatusImpl _value,
-    $Res Function(_$RsvpStatusImpl) _then,
-  ) : super(_value, _then);
+      _$RsvpStatusImpl _value, $Res Function(_$RsvpStatusImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? isRsvped = null}) {
-    return _then(
-      _$RsvpStatusImpl(
-        null == isRsvped
-            ? _value.isRsvped
-            : isRsvped // ignore: cast_nullable_to_non_nullable
-                  as bool,
-      ),
-    );
+  $Res call({
+    Object? isRsvped = null,
+  }) {
+    return _then(_$RsvpStatusImpl(
+      null == isRsvped
+          ? _value.isRsvped
+          : isRsvped // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
@@ -1226,9 +1216,8 @@ abstract class _RsvpStatus implements EventsState {
 /// @nodoc
 abstract class _$$ErrorImplCopyWith<$Res> {
   factory _$$ErrorImplCopyWith(
-    _$ErrorImpl value,
-    $Res Function(_$ErrorImpl) then,
-  ) = __$$ErrorImplCopyWithImpl<$Res>;
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Failure failure});
 }
@@ -1238,23 +1227,22 @@ class __$$ErrorImplCopyWithImpl<$Res>
     extends _$EventsStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
-    _$ErrorImpl _value,
-    $Res Function(_$ErrorImpl) _then,
-  ) : super(_value, _then);
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of EventsState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failure = null}) {
-    return _then(
-      _$ErrorImpl(
-        null == failure
-            ? _value.failure
-            : failure // ignore: cast_nullable_to_non_nullable
-                  as Failure,
-      ),
-    );
+  $Res call({
+    Object? failure = null,
+  }) {
+    return _then(_$ErrorImpl(
+      null == failure
+          ? _value.failure
+          : failure // ignore: cast_nullable_to_non_nullable
+              as Failure,
+    ));
   }
 }
 
